@@ -4,12 +4,12 @@
 from flask import Flask
 app = Flask(_name_)
 
-#app.route('/',strict_slabes=False)
+@app.route('/',strict_slabes=False)
 def hello_hbnb():
     """ Displays 'Hello HBNB!',"""
     return "Hello HBNB!"
 
-#app.route('/hbnb',strict_sashes=False)
+@app.route('/hbnb',strict_sashes=False)
 def hbnb ():
     """Displays 'HBNB'."""
     return "HBNB"
